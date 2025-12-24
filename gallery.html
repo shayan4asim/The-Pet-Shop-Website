@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - THE PETS SHOP</title>
+    <meta name="description"
+        content="Photos of our pets, aquariums, and store in Victorville. See why we are rated 5 stars!">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section-padding text-center" style="background-color: var(--primary); color: white;">
+        <div class="container">
+            <h1>Store Gallery</h1>
+            <p>A glimpse into life at The Pets Shop</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container gallery-grid">
+            <!-- Reptiles -->
+            <div class="gallery-item">
+                <img src="assets/gallery_reptile.png" alt="Reptile">
+            </div>
+            <!-- Birds -->
+            <div class="gallery-item">
+                <img src="assets/gallery_bird.png" alt="Bird">
+            </div>
+            <!-- Fish -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                    alt="Fish Tank">
+            </div>
+            <!-- Interior -->
+            <div class="gallery-item">
+                <img src="assets/gallery_shelves.png" alt="Shelves">
+            </div>
+            <!-- Hamster -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                    alt="Hamster">
+            </div>
+            <!-- Store -->
+            <div class="gallery-item">
+                <img src="assets/gallery_aisle.png" alt="Store Aisle">
+            </div>
+        </div>
+    </section>
+
+    <div class="container text-center" style="margin-bottom: 4rem;">
+        <p>Want to see more? Follow us on Instagram!</p>
+        <a href="https://www.instagram.com/thepetshop.sb/" target="_blank" class="btn btn-outline"
+            style="margin-top: 1rem;">@thepetshop.sb</a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
